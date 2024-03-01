@@ -1,0 +1,105 @@
+/* variables */
+:root {
+  --color-background: #F0F0F0;
+  --color-bunny: #EB6F8B;
+  --color-fill: #FFF5F5;
+  --color-fill-shade: #E5DCDC;
+  --color-nijigasaki: #E4007F;
+  --color-text: #191818;
+}
+
+/* selectors */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body {
+  color: var(--color-text);
+  font-family: "YakuHanJP", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans JP", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+}
+a:-webkit-any-link:hover {
+  text-decoration: underline;
+}
+h1 {
+  color: var(--color-text);
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 2;
+}
+p {
+  font-size: 1rem;
+}
+img {
+  height: auto;
+  line-height: 0;
+  object-fit: cover;
+  width: auto;
+}
+button {
+  background-color: transparent;
+  border: 0;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+header {
+  background-color: var(--color-bunny);
+  color: var(--color-background);
+  height: 24px;
+  padding-inline: .5rem;
+}
+main {
+  align-items: center;
+  background-color: var(--color-bunny);
+  background-image: url("https://www.lovelive-anime.jp/nijigasaki/worldwide/img/bg-l.png");
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: calc(100vh - 24px);
+  justify-content: space-between;
+  width: 100%;
+}
+.title {
+  text-align: center;
+}
+.canvas {
+  align-items: center;
+  display: flex;
+  height: calc(100vh - 184px);
+  justify-content: center;
+  overflow: auto;
+  width: 100vw;
+}
+.bunny {
+  margin: 32px;
+}
+.bunny button {
+  background-color: var(--color-bunny);
+  border: solid 1px var(--color-background);
+  border-radius: 3rem;
+  color: var(--color-background);
+  font-size: 2rem;
+  font-weight: 600;
+  height: 6rem;
+  padding: 1.5rem;
+  position: relative;
+  top: 0px;
+}
+.bunny button:active {
+  top: 1px;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
